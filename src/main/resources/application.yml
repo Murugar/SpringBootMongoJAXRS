@@ -1,0 +1,26 @@
+spring:
+   data:
+      mongodb.host: localhost
+      mongodb.port: 27017
+      mongodb.database: test
+      mongodb.repositories.enabled: true
+
+server:
+  port: 19090
+
+endpoints:
+  jmx:
+    enabled: true
+    unique-names: true
+
+management:
+  security:
+    enabled: true 
+
+security:
+  ignored:
+    - /services/**
+  user:
+    name: guest
+    password: guest
+    
